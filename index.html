@@ -22,18 +22,19 @@
       font-size: 50px;
     }
     .container {
-      max-width: 800px;
-      margin: 20px auto;
+      max-width: 100%; /* Make the container full width */
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
     }
     .image-grid {
       display: grid;
-      grid-template-columns: repeat(6, 1fr); /* Changed to six columns */
+      grid-template-columns: repeat(6, 1fr);
       gap: 10px;
       margin-top: 20px;
     }
     .image-grid img {
-      max-width: 100%;
-      height: auto;
+      width: 100%; /* Make images fill the container width */
+      height: auto; /* Maintain aspect ratio */
     }
     .contact-info {
       margin-top: 20px;
@@ -49,8 +50,8 @@
   <div class="container">
     <div class="image-grid">
       <!-- Images on the left -->
-      <div></div> <!-- Empty div for spacing -->
-      <div></div> <!-- Empty div for spacing -->
+      <div></div>
+      <div></div>
       <img src="image1.jpg" alt="Left Image 1">
       <img src="image2.jpg" alt="Left Image 2">
       <!-- Existing images -->
@@ -61,14 +62,8 @@
       <!-- Images on the right -->
       <img src="image3.jpg" alt="Right Image 1">
       <img src="image4.jpg" alt="Right Image 2">
-      <div></div> <!-- Empty div for spacing -->
-      <div></div> <!-- Empty div for spacing -->
-    </div>
-
-    <div class="contact-info">
-      <p>Contact: Rabin Patra</p>
-      <p>Phone: +91 7008683968</p>
-      <p>Services: Taxis, Sightseeing, Airport Transfers, Car Services, Driver Services</p>
+      <div></div>
+      <div></div>
     </div>
   </div>
 
